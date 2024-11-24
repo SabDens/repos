@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\denbo\source\repos\dz_23-24\dz_23-24\main.cpp(7,13): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\denbo\source\repos\dz_23-24\dz_23-24\main.cpp(108,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  dz_23-24.vcxproj -> C:\Users\denbo\source\repos\dz_23-24\x64\Debug\dz_23-24.exe

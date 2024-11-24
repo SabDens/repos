@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\denbo\\source\\repos\\para9-10\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{38003A52-5736-4C93-9D41-1EAB37137E1E}|para9-10\\para9-10.vcxproj|C:\\Users\\denbo\\source\\repos\\para9-10\\para9-10\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{38003A52-5736-4C93-9D41-1EAB37137E1E}|para9-10\\para9-10.vcxproj|solutionrelative:para9-10\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38003A52-5736-4C93-9D41-1EAB37137E1E}|para9-10\\para9-10.vcxproj|C:\\Users\\denbo\\source\\repos\\para9-10\\para9-10\\main_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{38003A52-5736-4C93-9D41-1EAB37137E1E}|para9-10\\para9-10.vcxproj|solutionrelative:para9-10\\main_1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\denbo\\source\\repos\\para9-10\\para9-10\\main.cpp",
+              "RelativeDocumentMoniker": "para9-10\\main.cpp",
+              "ToolTip": "C:\\Users\\denbo\\source\\repos\\para9-10\\para9-10\\main.cpp",
+              "RelativeToolTip": "para9-10\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-22T14:24:45.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main_1.cpp",
+              "DocumentMoniker": "C:\\Users\\denbo\\source\\repos\\para9-10\\para9-10\\main_1.cpp",
+              "RelativeDocumentMoniker": "para9-10\\main_1.cpp",
+              "ToolTip": "C:\\Users\\denbo\\source\\repos\\para9-10\\para9-10\\main_1.cpp",
+              "RelativeToolTip": "para9-10\\main_1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-22T14:24:36.002Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\denbo\source\repos\para_25-26\para_25-26\main.cpp(87,22): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  para_25-26.vcxproj -> C:\Users\denbo\source\repos\para_25-26\x64\Debug\para_25-26.exe

@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\denbo\source\repos\para3-4\para3-4\main.cpp(13,7): warning C4215: нестандартное расширение: long float
+  para3-4.vcxproj -> C:\Users\denbo\source\repos\para3-4\x64\Debug\para3-4.exe

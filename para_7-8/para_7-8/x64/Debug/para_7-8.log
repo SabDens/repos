@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\denbo\source\repos\para_7-8\para_7-8\main.cpp(205,6): warning C4101: qw: неиспользованная локальная переменная
+  para_7-8.vcxproj -> C:\Users\denbo\source\repos\para_7-8\x64\Debug\para_7-8.exe

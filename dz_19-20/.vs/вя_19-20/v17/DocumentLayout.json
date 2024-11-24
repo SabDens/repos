@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\denbo\\source\\repos\\\u0432\u044F_19-20\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C51D39D-2F4C-4687-AC8B-632F128E982F}|\u0432\u044F_19-20\\\u0432\u044F_19-20.vcxproj|C:\\Users\\denbo\\source\\repos\\\u0432\u044F_19-20\\\u0432\u044F_19-20\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2C51D39D-2F4C-4687-AC8B-632F128E982F}|\u0432\u044F_19-20\\\u0432\u044F_19-20.vcxproj|solutionrelative:\u0432\u044F_19-20\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\denbo\\source\\repos\\\u0432\u044F_19-20\\\u0432\u044F_19-20\\main.cpp",
+              "RelativeDocumentMoniker": "\u0432\u044F_19-20\\main.cpp",
+              "ToolTip": "C:\\Users\\denbo\\source\\repos\\\u0432\u044F_19-20\\\u0432\u044F_19-20\\main.cpp",
+              "RelativeToolTip": "\u0432\u044F_19-20\\main.cpp",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAgwK8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-18T18:08:54.737Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

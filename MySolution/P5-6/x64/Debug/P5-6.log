@@ -1,0 +1,14 @@
+﻿  main.cpp
+C:\Users\denbo\source\repos\MySolution\P5-6\main.cpp(311,38): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\denbo\source\repos\MySolution\P5-6\main.cpp(313,13): warning C4804: <=: небезопасное использование типа "bool" в операции
+C:\Users\denbo\source\repos\MySolution\P5-6\main.cpp(315,38): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\denbo\source\repos\MySolution\P5-6\main.cpp(319,38): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\denbo\source\repos\MySolution\P5-6\main.cpp(325,38): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\denbo\source\repos\MySolution\P5-6\main.cpp(327,14): warning C4804: <=: небезопасное использование типа "bool" в операции
+C:\Users\denbo\source\repos\MySolution\P5-6\main.cpp(329,38): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\denbo\source\repos\MySolution\P5-6\main.cpp(333,38): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\denbo\source\repos\MySolution\P5-6\main.cpp(339,38): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\denbo\source\repos\MySolution\P5-6\main.cpp(341,14): warning C4804: <=: небезопасное использование типа "bool" в операции
+C:\Users\denbo\source\repos\MySolution\P5-6\main.cpp(343,38): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\denbo\source\repos\MySolution\P5-6\main.cpp(347,38): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  P5-6.vcxproj -> C:\Users\denbo\source\repos\MySolution\x64\Debug\P5-6.exe

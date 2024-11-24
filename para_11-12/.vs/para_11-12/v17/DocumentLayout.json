@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\denbo\\source\\repos\\para_11-12\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{558BF235-E64E-44BF-BC57-3FA22E9ADD63}|para_11-12\\para_11-12.vcxproj|C:\\Users\\denbo\\source\\repos\\para_11-12\\para_11-12\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{558BF235-E64E-44BF-BC57-3FA22E9ADD63}|para_11-12\\para_11-12.vcxproj|solutionrelative:para_11-12\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\denbo\\source\\repos\\para_11-12\\para_11-12\\main.cpp",
+              "RelativeDocumentMoniker": "para_11-12\\main.cpp",
+              "ToolTip": "C:\\Users\\denbo\\source\\repos\\para_11-12\\para_11-12\\main.cpp",
+              "RelativeToolTip": "para_11-12\\main.cpp",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAGMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-28T09:17:11.137Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

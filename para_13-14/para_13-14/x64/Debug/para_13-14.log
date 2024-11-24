@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\denbo\source\repos\para_13-14\para_13-14\main.cpp(162,15): warning C4804: >: небезопасное использование типа "bool" в операции
+C:\Users\denbo\source\repos\para_13-14\para_13-14\main.cpp(62,1): warning C4715: linerSearch: значение возвращается не при всех путях выполнения
+C:\Users\denbo\source\repos\para_13-14\para_13-14\main.cpp(128,1): warning C4715: Wahrheit: значение возвращается не при всех путях выполнения
+  para_13-14.vcxproj -> C:\Users\denbo\source\repos\para_13-14\x64\Debug\para_13-14.exe

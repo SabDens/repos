@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\denbo\source\repos\dz_15-16\dz_15-16\main.cpp(57,30): warning C4101: n2: неиспользованная локальная переменная
+C:\Users\denbo\source\repos\dz_15-16\dz_15-16\main.cpp(57,34): warning C4101: n3: неиспользованная локальная переменная
+  dz_15-16.vcxproj -> C:\Users\denbo\source\repos\dz_15-16\x64\Debug\dz_15-16.exe

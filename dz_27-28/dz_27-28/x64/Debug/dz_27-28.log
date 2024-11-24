@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\denbo\source\repos\dz_27-28\dz_27-28\main.cpp(87,5): error C2601: main: недопустимые локальные определения функций
+      C:\Users\denbo\source\repos\dz_27-28\dz_27-28\main.cpp(69,20):
+      эта строка содержит скобку "{", которая пока не имеет парной
+  
+C:\Users\denbo\source\repos\dz_27-28\dz_27-28\main.cpp(69,20): error C1075: "{": не найдена несоответствующая лексема
