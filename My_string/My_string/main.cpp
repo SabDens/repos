@@ -28,7 +28,7 @@ int main() {
 	obj_steck.Push(12);
 	obj_steck.Print();*/
 	//std::cout<<obj_steck.Top();
-
+	  
 	/*Array Array_Obj(22);
 	Array_Obj.Print();
 	Array_Obj.ElementX(15,21,22);
