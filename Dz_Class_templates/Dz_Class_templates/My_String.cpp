@@ -54,10 +54,10 @@ void My_String::Init() {
 	_length = strlen(_string);
 }
 void My_String::Init(const char* new_string) {
-	int  new_length = strlen(new_string);
+	size_t new_length = strlen(new_string);
 	clear();
 	_string = new char[new_length + 1];
-	for (rsize_t i = 0; i < new_length; i++)
+	for (size_t i = 0; i < new_length; i++)
 	{
 		_string[i] = new_string[i];
 	}
