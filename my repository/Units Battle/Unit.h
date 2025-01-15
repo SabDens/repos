@@ -1,0 +1,72 @@
+#pragma once
+#include "../My String end array/My_String.h"
+#include "Weapon.h"
+
+class Unit : public Weapon
+{
+private:
+	double HP;
+protected:
+
+	//Weapon weapon;
+	int	speed;
+	My_String name;
+	bool IslnDefense;
+public:
+	Unit(const char* name_, double hp);
+	Unit(double hp);
+	Unit(const char* name_);
+	~Unit();
+	void Atack(Unit& enemy);
+	void Defense();
+	void Print() const;
+};
+
+class Swordman : public Unit
+{
+private:
+	unsigned int power;
+
+public:
+	Swordman()
+		:Unit("Den" , 1200)
+	{
+		damage += 20;
+	}
+	~Swordman();
+	void Atack(Unit& enemy);
+	void Defense();
+
+};
+
+class Archer : public Unit
+{
+private:
+	unsigned int arrows;
+
+public:
+	Archer()
+		:Unit("Den", 1000)
+	{
+	}
+	~Archer();
+	void Atack(Unit& unit);
+	void Defense();
+};
+
+
+class Mage : public Unit
+{
+private:
+	unsigned int mana;
+
+public:
+	Mage()
+		:Unit("Den", 1000)
+	{
+		damage += 30;
+	}
+	~Mage();
+	void Atack(Unit& unit);
+	void Defense();
+};
