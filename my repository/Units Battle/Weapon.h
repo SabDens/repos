@@ -13,9 +13,9 @@ enum Grade
 
 class Weapon
 {
-private:
-	My_String name;
 protected:
+	My_String name;
+
 	Grade grade;
 	unsigned int damage;
 public:
@@ -23,7 +23,7 @@ public:
 	Weapon(const char* name_);
 	~Weapon();
 	unsigned int GetDamege();
-	void UpGrade();
+	virtual void UpGrade();
 	Grade GetGrade();
 };
 
@@ -37,7 +37,7 @@ public:
 		damage += 30;
 	}
 	unsigned int GetDamage();
-	void UpGrade();
+	void UpGrade()override;
 };
 //
 //
@@ -54,7 +54,7 @@ public:
 		damage += 30;
 	}
 	unsigned int GetDamage();
-	void UpGrade();
+	void UpGrade()override;
 };
 
 
@@ -71,5 +71,5 @@ public:
 		damage += 30;
 	}
 	unsigned int GetDamage();
-	void UpGrade();
+	void UpGrade()override;
 };

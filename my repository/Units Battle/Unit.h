@@ -5,7 +5,7 @@
 class Unit : public Weapon
 {
 private:
-	double HP;
+	int HP;
 protected:
 
 	//Weapon weapon;
@@ -17,8 +17,9 @@ public:
 	Unit(double hp);
 	Unit(const char* name_);
 	~Unit();
-	void Atack(Unit& enemy);
-	void Defense();
+	virtual void TakeDamage(int value);
+	virtual void Atack(Unit& enemy);
+	virtual void Defense();
 	void Print() const;
 };
 
@@ -34,8 +35,8 @@ public:
 		damage += 20;
 	}
 	~Swordman();
-	void Atack(Unit& enemy);
-	void Defense();
+	void Atack(Unit& enemy)override;
+	void Defense()override;
 
 };
 
@@ -50,8 +51,8 @@ public:
 	{
 	}
 	~Archer();
-	void Atack(Unit& unit);
-	void Defense();
+	void Atack(Unit& unit)override;
+	void Defense()override;
 };
 
 
@@ -67,6 +68,6 @@ public:
 		damage += 30;
 	}
 	~Mage();
-	void Atack(Unit& unit);
-	void Defense();
+	void Atack(Unit& unit)override;
+	void Defense()override;
 };

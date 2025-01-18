@@ -19,14 +19,18 @@ Unit::Unit(const char* name_)
 Unit::~Unit() {
 
 }
-void Unit::Atack(Unit& enemy) {
-	std::cout << "Unit " << name << " Attack" << enemy.name << std::endl;
+void Unit::TakeDamage(int value) {
 	if (IslnDefense)
 	{
-		enemy.HP -= GetDamege() / 2;
-		Unit::Defense();
+		HP -= value/2;
 		return;
 	}
+	
+	HP -= value;
+}
+void Unit::Atack(Unit& enemy) {
+	std::cout << "Unit " << name << " Attack" << enemy.name << std::endl;
+	
 	enemy.HP -= GetDamege();
 }
 void Unit::Defense() {
@@ -40,6 +44,7 @@ void Unit::Defense() {
 
 void Unit::Print() const {
 	std::cout << "Unit:\n" << "Name " << name << "\n" << "HP " << HP << "\n" << "speed " << speed << "\n" << "Weapon: \n";
+	std::cout << "Name " << name << "\n" << "Grade" <<grade << "\n" << "min damage" << damage / 2;
 }
 
 //Swordman
