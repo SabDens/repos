@@ -1,12 +1,12 @@
 #include "Unit.h"
 // Unit
 
-Unit::Unit(const char* name_, double hp)
+Unit::Unit(const char* name_, int hp)
 	:HP(hp), Weapon(Common, name_), speed(10), name(name_)
 {
 
 }
-Unit::Unit(double hp)
+Unit::Unit(int hp)
 	:HP(hp), Weapon(Common, ""), speed(10), name("Denys")
 {
 }
@@ -44,7 +44,7 @@ void Unit::Defense() {
 
 void Unit::Print() const {
 	std::cout << "Unit:\n" << "Name " << name << "\n" << "HP " << HP << "\n" << "speed " << speed << "\n" << "Weapon: \n";
-	std::cout << "Name " << name << "\n" << "Grade" <<grade << "\n" << "min damage" << damage / 2;
+	std::cout << "Name " << name << "\n" << "Grade " <<grade << "\n" << "min damage " << damage / 2;
 }
 
 //Swordman
@@ -62,7 +62,15 @@ void Swordman::Defense()
 {
 	Unit::Defense();
 }
+void Swordman::TakeDamage(int value) {
+	if (IslnDefense)
+	{
+		HP -= value / 2;
+		return;
+	}
 
+	HP -= value;
+}
 
 // Archer
 
@@ -86,7 +94,15 @@ void Archer::Defense()
 {
 	Unit::Defense();
 }
+void Archer::TakeDamage(int value) {
+	if (IslnDefense)
+	{
+		HP -= value / 2;
+		return;
+	}
 
+	HP -= value;
+}
 
 //Mage
 
@@ -110,4 +126,13 @@ void Mage::Atack(Unit& enemy)
 void Mage::Defense()
 {
 	Unit::Defense();
+}
+void Mage::TakeDamage(int value) {
+	if (IslnDefense)
+	{
+		HP -= value / 2;
+		return;
+	}
+
+	HP -= value;
 }

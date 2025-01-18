@@ -4,17 +4,15 @@
 
 class Unit : public Weapon
 {
-private:
-	int HP;
 protected:
-
+	int HP;
 	//Weapon weapon;
 	int	speed;
 	My_String name;
 	bool IslnDefense;
 public:
-	Unit(const char* name_, double hp);
-	Unit(double hp);
+	Unit(const char* name_, int hp);
+	Unit(int hp);
 	Unit(const char* name_);
 	~Unit();
 	virtual void TakeDamage(int value);
@@ -37,6 +35,8 @@ public:
 	~Swordman();
 	void Atack(Unit& enemy)override;
 	void Defense()override;
+	void TakeDamage(int value)override;
+
 
 };
 
@@ -53,6 +53,8 @@ public:
 	~Archer();
 	void Atack(Unit& unit)override;
 	void Defense()override;
+	void TakeDamage(int value)override;
+
 };
 
 
@@ -70,4 +72,6 @@ public:
 	~Mage();
 	void Atack(Unit& unit)override;
 	void Defense()override;
+	void TakeDamage(int value)override;
+
 };
