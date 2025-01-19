@@ -1,5 +1,5 @@
 #pragma once
-#include "My_String.h"
+#include "../My String end array/My_String.h"
 
 class Contact
 {
