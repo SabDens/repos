@@ -70,17 +70,17 @@ void My_String::Init( char* new_string) {
 
 My_String& My_String::operator=( My_String& other)
 {
-	*this = other;
+	/**this = other;
 	other._string = nullptr;
-	other._length = 0;
-	/*clear();
+	other._length = 0;*/
+	clear();
 	_length = other._length;
 	_string = new char[_length + 1];
 	for (size_t i = 0; i < _length; i++)
 	{
 		_string[i] = other._string[i];
 	}
-	_string[_length] = '\0';*/
+	_string[_length] = '\0';
 	return *this;
 }
 My_String& My_String::operator=(const char* other) {

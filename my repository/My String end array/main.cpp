@@ -11,15 +11,23 @@
 int main() { 
 	srand(time(0));
 	Doubly_List<int> dList;
-	dList.AddToHead(20);
-	dList.AddToHead(30);
-	dList.AddToTail(12);
+	dList.AddToHead(73);
+	dList.AddToTail(14);
+	dList.AddToTail(17);
+	dList.AddToTail(37);
+	dList.AddToTail(70);
+	dList.AddToHead(73);
+	dList.AddToHead(73);
+
 	dList.Show();
-	dList.DeleteFromHead();
+	dList.Replace(73,1);
 	dList.Show();
-	dList.DeleteFromTail();
-	dList.Show();
-	dList.DeleteAll();
-	dList.Show();
+
+	//dList.InsertPos(25, 2);
+	//dList.DeletePos(5);
+	//dList.Show();
+	//dList.Reverse();
+	//dList.Show();
+	//std::cout << dList.Find(70);
 	return 0;
 }

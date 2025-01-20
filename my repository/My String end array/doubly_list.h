@@ -192,6 +192,7 @@ public:
 			nodePtr = nodePtr->next;
 
 		}
+		std::cout << "\n";
 	}
 	void Reverse() {
 		Node<T>* temp_h = head;
@@ -204,10 +205,77 @@ public:
 			temp_h = temp_h->prev;
 
 		}
-		if (temp != nullptr) {
+		if (temp_n != nullptr) {
 			head = temp_n->prev;
 
 		}
+	}
+	void InsertPos(T value, int pos) {
+		Node<T>* nodePtr = new Node<T>(value);
+		Node<T>* temp_h = head;
+
+		for (int i = 0; i < pos-1;i++) {
+			if (temp_h == nullptr) {
+				return; 
+
+			}
+			temp_h = temp_h->next;
+		}
+		nodePtr->next = temp_h->next;
+		nodePtr->prev = temp_h;
+		if (temp_h->next == nullptr) {
+			back = nodePtr;
+		}
+		else {
+			temp_h->next->prev = nodePtr;
+		}
+		temp_h->next = nodePtr;
+	}
+	void DeletePos(int pos) {
+
+		Node<T>* temp_h = head;
+		for (int i = 0; i < pos-1; i++) {
+			if (temp_h == nullptr) {
+				return; 
+			}
+			temp_h = temp_h->next;
+		}
+		temp_h->prev->next = temp_h->next;
+		temp_h->next->prev = temp_h->prev;
+
+		delete temp_h;
+	}
+
+	int Find(T value) const {
+		Node<T>* temp_h = head;
+		size_t position = 0;
+		while (temp_h != nullptr) {
+			position++;
+
+
+			if (temp_h->value == value) {
+				return position;
+			}
+			temp_h = temp_h->next;
+		}
+		std::cout << "NULL";
+		return -1;
+	}
+	int Replace(T value,T newValue) {
+		int count = 0;
+		Node<T>* temp_h = head;
+		while (temp_h != nullptr) {
+			if (temp_h->value == value) {
+				temp_h->value = newValue;
+				count++;
+			}
+			temp_h = temp_h->next;
+		}
+		if (count > 0)
+		{
+			return count;
+		}
+		return  -1;
 	}
 };
 
