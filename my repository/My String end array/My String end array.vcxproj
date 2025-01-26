@@ -132,6 +132,8 @@
     <ClInclude Include="Lifo.h" />
     <ClInclude Include="List.h" />
     <ClInclude Include="My_String.h" />
+    <ClInclude Include="NewArray.h" />
+    <ClInclude Include="Queue.h" />
     <ClInclude Include="Stack.h" />
   </ItemGroup>
   <ItemGroup>

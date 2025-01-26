@@ -43,10 +43,22 @@ public:
 		Node<T>* nodePtr = new Node<T>(value);
 		nodePtr->next = head;
 		nodePtr->prev = nullptr;
+		if (head == nullptr) {
+			back = nodePtr;
+
+		}
+		else {
+			head->prev = nodePtr;
+		}
 		head = nodePtr;
-		back = nodePtr;
+		//back = nodePtr;
 	}
 	void AddToTail(const T& value) {
+		if (head == nullptr)
+		{
+			AddToHead(value);
+			return;
+		}
 		Node<T>* nodePtr = new Node<T>(value);
 		nodePtr->prev = back;
 		if (back != nullptr) {
@@ -54,6 +66,7 @@ public:
 		}
 		back = nodePtr;
 	}
+
 	void DeleteFromHead() {
 		if (head == nullptr) {
 			return;
@@ -255,6 +268,7 @@ public:
 
 			if (temp_h->value == value) {
 				return position;
+
 			}
 			temp_h = temp_h->next;
 		}
@@ -277,6 +291,101 @@ public:
 		}
 		return  -1;
 	}
+
+
+	Node<T>* Clone() const {
+		Node<T>* newList = new Node<T>(head->value); 
+		Node<T>* temp_h = head->next; 
+		Node<T>* nodePtr = newList;
+
+		while (temp_h != nullptr) {
+
+			Node<T>* newNode = new Node<T>(temp_h->value);
+			nodePtr->next = newNode;
+			newNode->prev = nodePtr;
+			nodePtr = newNode;
+			temp_h = temp_h->next;
+
+		}
+
+
+		return newList;
+	}
+
+	Node<T>* operator+(const Doubly_List<T>& other) const {
+		Node<T>* newList = this->Clone();
+
+		Node<T>* temp_h = newList;
+
+		while (temp_h->next != nullptr) {
+			temp_h = temp_h->next; 
+		}
+		Node<T>* tempOther = other.head;
+
+		while (tempOther != nullptr) {
+			Node<T>* nodePtr = new Node<T>(tempOther->value);
+
+			temp_h->next = nodePtr;
+			nodePtr->prev = temp_h;
+
+			temp_h = nodePtr;
+			tempOther = tempOther->next;
+		}
+
+		return newList;
+	}
+
+
+
+
+
+	//я страдал 
+	Node<T>* operator*(const Doubly_List<T>& other) const {
+		Doubly_List<T> List;
+		List.head = *this + other;
+
+		Doubly_List<T> newList;
+		Node<T>* temp_h = List.head;
+
+		while (temp_h != nullptr) {
+			size_t count = 0;
+			Node<T>* innerTemp = List.head;
+
+			for (size_t i = 0; innerTemp != nullptr; i++) {
+
+				if (innerTemp->value == temp_h->value) {
+					count++;
+				}
+
+				if (count > 1) {
+					Node<T>* checkTemp = newList.head;
+					bool isDuplicate = true;
+
+					while (checkTemp != nullptr) {
+
+						if (checkTemp->value == temp_h->value) {
+							isDuplicate = false;
+							break;
+						}
+						checkTemp = checkTemp->next;
+					}
+
+					if (isDuplicate) {
+						newList.AddToTail(temp_h->value);
+						break;
+
+					}
+				}
+
+				innerTemp = innerTemp->next;
+			}
+
+			temp_h = temp_h->next;
+		}
+		return newList.head;
+	}
+
+
 };
 
 #endif

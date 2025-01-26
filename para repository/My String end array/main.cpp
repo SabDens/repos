@@ -26,8 +26,11 @@ int main() {
 	arr.RandArray(10); 
 	arr.Print();
 	arr.Save("array.txt");
-
-	arr.Load("array.txt");
-	arr.Print();
+	while (true)
+	{
+		arr.Load("array.txt");
+		arr.Print();
+	}
+	
 	return 0;
 }
